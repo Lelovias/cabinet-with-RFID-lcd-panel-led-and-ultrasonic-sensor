@@ -3,7 +3,7 @@
 #include <SPI.h>                                                                //include Serial Peripheral Interface Library
 #include <Servo.h>                                                              //include Servo Library
 
-#define  uchar unsigned char
+#define uchar unsigned char
 #define uint  unsigned int
 #define RED 3                                                                   //red LED on pin 3
 #define GREEN 2                                                                 //green led on pin 2
@@ -120,7 +120,9 @@ void loop()
                   delay(200);                                                   //delay 0.2s
                   Serial.println("no object detected");                         //serial print no object detected
 
+
                 }
+
 
                 delay(1000);
                 digitalWrite(GREEN, LOW);                                       //turn green light off
